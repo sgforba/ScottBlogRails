@@ -1,6 +1,7 @@
-a,p {
+a,p, div {
 	font-family: 'Arvo', serif;
 }
+a {text-decoration: none;}
 
 .wrapper {
 
@@ -79,4 +80,69 @@ nav {
 	height:100px;
 	line-height: 100px;
 	text-align: center;
+}
+.content {
+	width: 940px;
+}
+.blog-date {
+	float: left;
+	width: 120px;
+	height: 120px;
+	background: url('../images/date-circle.png');
+	text-align: center;
+	line-height: 120px;
+}
+.blog-wrapper{
+	float: right;
+	width: 820px;
+}
+
+ .blog-post {
+	overflow: auto;
+	border-bottom: 1px dashed #d8d8d8;
+}
+.metrics {
+	height: 55px;
+	line-height: 60px;
+	border-bottom: 1px solid #d8d8d8;
+	margin-bottom: 24px;
+}
+.metrics > * {
+	display: inline-block;
+	min-width: 119px;
+	height: 25px;
+	line-height: 25px;
+	margin-bottom: 10px;
+	padding-right: 25px;
+	border-right: 1px solid #d8d8d8;
+	font-size: 14px;
+	text-align: center;
+
+}
+.tags {
+	margin-left: 15px;
+}
+
+.blog-header {
+	font-size: 30px;
+	font-weight: bolder;
+	color: #000000;
+	margin-bottom: 20px;
+}
+
+.blog-text {
+	color:#8e8e8e;
+	font-size: 14px;
+	font-weight: normal;
+	margin-bottom: 25px;
+}
+.read-more {
+	margin-bottom: 39px;
+}
+.read-more a{
+	font-weight: bold;
+	font-size: normal;
+	color: #3eb3a5;
+	padding-bottom: 5px;
+	border-bottom: 1px solid #3eb3a5;	
 }
