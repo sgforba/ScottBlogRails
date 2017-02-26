@@ -4,9 +4,8 @@
 <head>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<link rel="stylesheet" type="text/css" href="styles/reset.css">
-<link rel="stylesheet" type="text/css" href="styles/styles.css">
 <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
+<%= stylesheet_link_tag 'application', media: "all" %>
 <title>Scott's Blog Project!</title>
 </head>
 <body>
@@ -17,9 +16,7 @@
         <nav>
           <div class="nav-wrapper center">
             <figure>
-                <a href="#">
-                  Home
-                </a>
+               <%= link_to 'Home', welcome_home_path %>
                 <ul class="dropdown">
                     <li class="dropdown-item">
                       <a href="">
@@ -45,7 +42,7 @@
             </figure> 
             <figure>
                 <a href="#">
-                  About
+                  <%= link_to 'About', welcome_about_path %>
                 </a>
                 <ul class="dropdown">
                     <li class="dropdown-item">
