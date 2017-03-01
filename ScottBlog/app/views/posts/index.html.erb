@@ -1,5 +1,10 @@
-<div class="wrapper center">
+
+
+<%= link_to 'New Post', new_post_path %>
+
+  <div class="wrapper center">
     <div class="content center">
+    <% @posts.each do |post| %>
         <article class="blog-post">
 
           <div class="blog-date">
@@ -20,16 +25,21 @@
             </div>
             <div class="blog-content">
               <div class="blog-header">
-                Lorem Ipsum Dolor Sit Amet
+                <%= post.title %>
               </div>
               <p class="blog-text">
-                This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti. sociosqu ad litora torquent per conubia 
+                <%= post.body %>
               </p>
               <div class='read-more'>
-                <a href="" target="_blank">Read More</a>
+                <a href="" target="_blank"><%= link_to 'Read More', post %></a>
               </div>  
             </div>   
           </div>  
-        </article>   
+        </article> 
+    <% end %>
     </div>  
-</div>  
+  </div>  
+  
+
+
+
